@@ -20,8 +20,8 @@ public class socialService_testcase extends AppTestBase
 {
 	Map<String, String> configData;
 	Map<String, String> loginCredentials;
-	String expectedDataFilePath = testDataFilePath + "expected_data.json";
-	String loginFilePath = loginDataFilePath + "Login.json";
+	String expectedDataFilePath = testDataFilePath + "expected_data.xlsx";
+	String loginFilePath = loginDataFilePath + "Login.xlsx";
 	StartupPage startupPage;
 	socialService_Pages socialService_PagesInstance;
 	LocatorsFactory locatorsFactoryInstance;
