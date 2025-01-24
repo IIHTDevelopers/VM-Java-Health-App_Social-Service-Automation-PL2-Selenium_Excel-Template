@@ -159,7 +159,7 @@ public class socialService_testcase extends AppTestBase
 		Assert.assertTrue(locatorsFactoryInstance.listByPatientStatusRadioButtonIsPresent(driver).isSelected(), "RadioButton is not present in the current page, Please check manually");
 	}
 	
-	@Test(priority = 12, groups = {"sanity"}, description="Close this New SSU Patient Registration popup by using javaScript")
+	@Test(priority = 12, groups = {"sanity"}, description="Ensure navigation controls function correctly and verify the presence of specific fields and buttons on the Home page and SSU Patient List page")
 	public void performNavigateBackNavigateRefreshNavigateForwordAction() throws Exception {
 		socialService_PagesInstance = new socialService_Pages(driver);
 		locatorsFactoryInstance = new LocatorsFactory(driver);
@@ -167,19 +167,8 @@ public class socialService_testcase extends AppTestBase
 		Assert.assertTrue(locatorsFactoryInstance.verifySSUPatientListButtonIsPresent(driver).isDisplayed(), "elements are not present, Please check manually");
 	}
 	
-	@Test(priority = 13, groups = {"sanity"}, description="On the Social service module's, in the \"SSU Patient List\" page,\r\n"
-			+ "locate the \"Edit Information Of\" patient  textbox using \"ID\" locator \r\n"
-			+ "and verify the locator name is \"id\" or not ?")
-	public void verifyLocators() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "socialServiceModuleStringValue");
-		Assert.assertEquals(socialService_PagesInstance.verifyLocatorsName(expectedData), expectedData.get("idNameOfeditInformationtexbox"),"something went wroung, please check manually");
-		Assert.assertEquals(locatorsFactoryInstance.verifyAttributesValueOfEditInformationTexbox(),expectedData.get("editInformationOfExistingPatientName"),"race Textfield is not present in the current page, Please check manually");
-	}
 	
-	@Test(priority = 14, groups = {"sanity"}, description="On Procurements Module's Setting page,\r\n"
+	@Test(priority = 13, groups = {"sanity"}, description="On Procurements Module's Setting page,\r\n"
 			+ "select the Sub Category Tab and  fetch the Sub-Category Name for the given code (Code - 0003)\r\n"
 			+ "and validate that Sub Category name.")
 	public void getDataFromTable() throws Exception {
@@ -192,7 +181,7 @@ public class socialService_testcase extends AppTestBase
 //		Assert.assertTrue(locatorsFactoryInstance.verifyAddSubCategoryIsPresent(driver).isDisplayed(), "elements are not present, Please check manually");
 	}
 	
-	@Test(priority = 15, groups = {"sanity"}, description="On Procurements Module's Setting page, \r\n"
+	@Test(priority = 14, groups = {"sanity"}, description="On Procurements Module's Setting page, \r\n"
 			+ "select the Items Tab, \r\n"
 			+ "then click on \"Add Item\" Button which popups \"Add Item\" form.\r\n"
 			+ "Then select the \"GENERAL-INVENTORY\" radio button\r\n"
@@ -203,6 +192,20 @@ public class socialService_testcase extends AppTestBase
 		locatorsFactoryInstance = new LocatorsFactory(driver);
 		Assert.assertTrue(socialService_PagesInstance.verifyRadioButton(),"something went wroung, please check manually");
 		Assert.assertTrue(locatorsFactoryInstance.verifyProcurementModuleRadioButton(), "element not present in the current page, Please check manually");
+	}
+	
+	@Test(priority = 15, groups = {"sanity"}, description="On the Add Item form's\r\n"
+			+ "Select/check the below check boxes :\r\n"
+			+ "1. Is Cssd Applicable check box\r\n"
+			+ "2. Is Cold Storage Applicable check box\r\n"
+			+ "3. Is Patient Consumption Applicable check box\r\n"
+			+ "verify that the above check boxes are selected or not ?\r\n"
+			+ "after the validation, Uncheck the above check box.")
+	public void verifyCheckbox() throws Exception {
+		socialService_PagesInstance = new socialService_Pages(driver);
+		locatorsFactoryInstance = new LocatorsFactory(driver);
+		Assert.assertTrue(socialService_PagesInstance.verifyCheckbox(),"something went wroung, please check manually");
+		Assert.assertTrue(locatorsFactoryInstance.verifySaveItemIsPresent(driver).isDisplayed(),"element is not present in the current page, Please check manually");
 	}
 		
 	@AfterClass(alwaysRun = true)
