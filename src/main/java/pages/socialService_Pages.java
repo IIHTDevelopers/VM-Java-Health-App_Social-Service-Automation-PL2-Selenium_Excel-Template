@@ -171,7 +171,7 @@ public class socialService_Pages extends StartupPage {
 	/**@Test12
 	 * about this method closeNewSSUPatientRegistrationPopupByUsingJsExecutor() 
 	 * @param : null
-	 * @description : Close this "New SSU Patient Registration" popup by using javaScript.
+	 * @description : Ensure navigation controls function correctly and verify the presence of specific fields and buttons on the Home page and SSU Patient List page.
 	 * @return : Boolean
 	 * @author : Yaksha
 	 */
@@ -180,19 +180,9 @@ public class socialService_Pages extends StartupPage {
 		return false;
 	}
 
-	/**@Test13
-	 * about this method verifyLocatorsName() 
-	 * @param : Map<String, String>
-	 * @description : get the place holder name of address text filed and verify  the place holder name.
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyLocatorsName(Map<String, String> expectedData) throws Exception {
-		
-		return null;
-	}
+	
 
-	/**@Test14
+	/**@Test13
 	 * about this method getDataFromTable() 
 	 * @param : null
 	 * @description : it will fetch the data from the table
@@ -205,15 +195,25 @@ public class socialService_Pages extends StartupPage {
 		return null;
 	}
 
-	/**@Test15
+	/**@Test14
 	 * about this method verifyRadioButton() 
 	 * @param : null
-	 * @description :
+	 * @description :Select/check the radio button.
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
 	public Boolean verifyRadioButton() throws Exception {
 		
+		return false;
+	}
+	/**@Test15
+	 * about this method verifyCheckbox() 
+	 * @param : null
+	 * @description :Select/check the check-boxes.
+	 * @return : Boolean
+	 * @author : YAKSHA
+	 */
+	public Boolean verifyCheckbox() throws Exception {
 		return false;
 	}
 
