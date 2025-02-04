@@ -21,7 +21,7 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public boolean loginToHealthAppByGivenValidCredetial(Map<String, String> expectedData) throws Exception {
-		
+		//write your logic
 		return false;
 	}
 
@@ -33,7 +33,7 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String verifyTitleOfThePage() throws Exception {
-			
+		//write your logic	
 		return null;
 	}
 
@@ -45,7 +45,7 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String verifyURLOfThePage() throws Exception {
-			
+		//write your logic	
 		return null;
 	}
 
@@ -57,7 +57,7 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public Boolean verifySocialServiceModuleisPresentAndGoToSocialServiceTab() throws Exception {
-		
+		//write your logic
 		return false;
 	}
 
@@ -69,6 +69,7 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String verifyRegisterNewSSUPatientButtonisPresentAndValidateFormName() throws Exception {
+		//write your logic
 		return null;
 	}
 
@@ -79,7 +80,7 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String validateErrorMessageInLastNameTextfield() throws Exception {
-		
+		//write your logic
 		return null;
 	}
 
@@ -91,23 +92,11 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String fillDataInTextfieldsAndVerifyEnteredData(Map<String, String> expectedData) throws Exception {
-		
+		//write your logic
 		return null;
 	}
 
 	/**@Test6
-	 * about this method selectIndiaFromCountryDropdownAndVerifySelection() 
-	 * @param : get the data from Excel file as type Map<String, String> expectedData
-	 * @description : it will select the country as per Excel expected data
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String selectIndiaFromCountryDropdownAndVerifySelection(Map<String, String> expectedData) throws Exception {
-
-		return null;	
-	}
-
-	/**@Test7
 	 * about this method scrollToButtomOfThePageAndVerifyCloseButtonIsPresent() 
 	 * @param : null
 	 * @description : scroll to the bottom of the page and verify that "Close" button is present or not.
@@ -115,11 +104,11 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public Boolean scrollToButtomOfThePageAndVerifyCloseButtonIsPresent() throws Exception {
-		
+		//write your logic
 		return false;
 	}
 
-	/**@Test8
+	/**@Test7
 	 * about this method validateWarnningMessageOfNewSSUPatientRegistrationForms() 
 	 * @param : Map<String, String>
 	 * @description : Validate the warnning message for the membership dropdown.
@@ -127,11 +116,11 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String validateWarnningMessageOfNewSSUPatientRegistrationForms(Map<String, String> expectedData) throws Exception {
-		
+		//write your logic
 		return null;
 	}
 
-	/**@Test9
+	/**@Test8
 	 * about this method verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown() 
 	 * @param : get the data from Excel file as type Map<String, String> expectedData
 	 * @description : it will select the country as per Excel expected data
@@ -139,11 +128,11 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown(Map<String, String> expectedData) throws Exception {
-
+		//write your logic
 		return null;
 	}
 
-	/**@Test10
+	/**@Test9
 	 * about this method getPlaceHolderNameVerifyPlaceHolderNameOfAddress() 
 	 * @param : Map<String, String>
 	 * @description : get the place holder name of address textfiled and verify  the place holder name.
@@ -151,12 +140,12 @@ public class socialService_Pages extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public String getPlaceHolderNameVerifyPlaceHolderNameOfAddress(Map<String, String> expectedData) throws Exception {
-		
+		//write your logic
 		return null;
 		
 	}
 
-	/**@Test11
+	/**@Test10
 	 * about this method closeNewSSUPatientRegistrationPopupByUsingJsExecutor() 
 	 * @param : null
 	 * @description : Close this "New SSU Patient Registration" popup by using javaScript.
@@ -164,11 +153,11 @@ public class socialService_Pages extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean closeNewSSUPatientRegistrationPopupByUsingJsExecutor() throws Exception {
-		
+		//write your logic
 		return false;
 	}
 
-	/**@Test12
+	/**@Test11
 	 * about this method closeNewSSUPatientRegistrationPopupByUsingJsExecutor() 
 	 * @param : null
 	 * @description : Ensure navigation controls function correctly and verify the presence of specific fields and buttons on the Home page and SSU Patient List page.
@@ -176,13 +165,13 @@ public class socialService_Pages extends StartupPage {
 	 * @author : Yaksha
 	 */
 	public Boolean performNavigateBackNavigateRefreshNavigateForwordAction() throws Exception {
-		
+		//write your logic
 		return false;
 	}
 
 	
 
-	/**@Test13
+	/**@Test12
 	 * about this method getDataFromTable() 
 	 * @param : null
 	 * @description : it will fetch the data from the table
@@ -190,12 +179,11 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String getDataFromTable() throws Exception {
-		
-
+		//write your logic
 		return null;
 	}
 
-	/**@Test14
+	/**@Test13
 	 * about this method verifyRadioButton() 
 	 * @param : null
 	 * @description :Select/check the radio button.
@@ -203,10 +191,10 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public Boolean verifyRadioButton() throws Exception {
-		
+		//write your logic
 		return false;
 	}
-	/**@Test15
+	/**@Test14
 	 * about this method verifyCheckbox() 
 	 * @param : null
 	 * @description :Select/check the check-boxes.
@@ -214,7 +202,20 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public Boolean verifyCheckbox() throws Exception {
+		//write your logic
 		return false;
+	}
+	
+	/**@Test15
+	 * about this method verifyToolTipOfAnElement()
+	 * @param : null
+	 * @description :go to appointmentTab and verify the TOOLTIP value/text
+	 * @return : String
+	 * @author : YAKSHA
+	 */
+	public String verifyToolTipOfAnElement() throws Exception {
+		//write your logic
+		return null;
 	}
 
 }
