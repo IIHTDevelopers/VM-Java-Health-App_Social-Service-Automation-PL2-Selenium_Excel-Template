@@ -183,39 +183,6 @@ public class socialService_Pages extends StartupPage {
 		return null;
 	}
 
-	/**@Test13
-	 * about this method verifyRadioButton() 
-	 * @param : null
-	 * @description :Select/check the radio button.
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean verifyRadioButton() throws Exception {
-		//write your logic
-		return false;
-	}
-	/**@Test14
-	 * about this method verifyCheckbox() 
-	 * @param : null
-	 * @description :Select/check the check-boxes.
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean verifyCheckbox() throws Exception {
-		//write your logic
-		return false;
-	}
 	
-	/**@Test15
-	 * about this method verifyToolTipOfAnElement()
-	 * @param : null
-	 * @description :go to appointmentTab and verify the TOOLTIP value/text
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyToolTipOfAnElement() throws Exception {
-		//write your logic
-		return null;
-	}
 
 }
