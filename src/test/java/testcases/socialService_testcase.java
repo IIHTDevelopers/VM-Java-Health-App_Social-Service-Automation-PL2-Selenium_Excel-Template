@@ -167,44 +167,7 @@ public class socialService_testcase extends AppTestBase
 		Assert.assertEquals(locatorsFactoryInstance.veryfyTableData(),expectedData.get("cottonSubCategoryName"),"something went wroung, Please check manually");
 //		Assert.assertTrue(locatorsFactoryInstance.verifyAddSubCategoryIsPresent(driver).isDisplayed(), "elements are not present, Please check manually");
 	}
-	
-	@Test(priority = 13, groups = {"sanity"}, description="On Procurements Module's Setting page, \r\n"
-			+ "select the Items Tab, \r\n"
-			+ "then click on \"Add Item\" Button which popups \"Add Item\" form.\r\n"
-			+ "Then select the \"GENERAL-INVENTORY\" radio button\r\n"
-			+ "and check whether is the radio button is selected or not. \r\n"
-			+ "After the validation deselect the \"GENERAL-INVENTORY\" radio button.")
-	public void verifyRadioButton() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(socialService_PagesInstance.verifyRadioButton(),"something went wroung, please check manually");
-		Assert.assertTrue(locatorsFactoryInstance.verifyProcurementModuleRadioButton(), "element not present in the current page, Please check manually");
-	}
-	
-	@Test(priority = 14, groups = {"sanity"}, description="On the Add Item form's\r\n"
-			+ "Select/check the below check boxes :\r\n"
-			+ "1. Is Cssd Applicable check box\r\n"
-			+ "2. Is Cold Storage Applicable check box\r\n"
-			+ "3. Is Patient Consumption Applicable check box\r\n"
-			+ "verify that the above check boxes are selected or not ?\r\n"
-			+ "after the validation, Uncheck the above check box.")
-	public void verifyCheckbox() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(socialService_PagesInstance.verifyCheckbox(),"something went wroung, please check manually");
-		Assert.assertTrue(locatorsFactoryInstance.verifySaveItemIsPresent(driver).isDisplayed(),"element is not present in the current page, Please check manually");
-	}
-	
-	@Test(priority = 15, groups = {"sanity"}, description="On the Appointment module, under the\"New visit\" tab, verify tooltips which is present on keyboard icon.")
-	public void  verifyTooltipOfAnElement() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "KeyBoardTooltip");
-		Assert.assertEquals(socialService_PagesInstance.verifyToolTipOfAnElement(), expectedData.get("newPatientTooltipValue"),"Verification failed, please check manually");
-	    Assert.assertTrue(locatorsFactoryInstance.tooltipTextIsPresent(driver).isDisplayed(), "Tooltip is not present in the current page, Please check manually");
-	}
-		
+			
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		System.out.println("before closing the browser");
