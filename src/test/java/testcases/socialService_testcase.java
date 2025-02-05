@@ -165,7 +165,6 @@ public class socialService_testcase extends AppTestBase
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "socialServiceModuleStringValue");
 		Assert.assertEquals(socialService_PagesInstance.getDataFromTable(), expectedData.get("cottonSubCategoryName"),"something went wroung, please check manually");
 		Assert.assertEquals(locatorsFactoryInstance.veryfyTableData(),expectedData.get("cottonSubCategoryName"),"something went wroung, Please check manually");
-//		Assert.assertTrue(locatorsFactoryInstance.verifyAddSubCategoryIsPresent(driver).isDisplayed(), "elements are not present, Please check manually");
 	}
 			
 	@AfterClass(alwaysRun = true)
